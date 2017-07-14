@@ -1,0 +1,35 @@
+{
+  "name": "nightswatch-node",
+  "version": "0.0.0",
+  "description": "A module used to gather information about computing node for Night's Watch app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "cover": "nyc --reporter=lcov npm test"
+  },
+  "engines": {
+    "node": ">=v7"
+  },
+  "files": [
+    "index.js",
+    "lib/*"
+  ],
+  "repository": "nghiattran/nightswatch-node",
+  "author": {
+    "name": "nghiattran",
+    "email": "nghiattran3@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "ssh2": "^0.5.5"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.2",
+    "istanbul": "0.3.14",
+    "mocha": "2.2.5",
+    "mocha-lcov-reporter": "0.0.2",
+    "nyc": "^11.0.3"
+  }
+}

@@ -1,10 +1,13 @@
 'use strict';
 
-const assert = require('assert');
-const Node = require('./');
+var assert = require('assert');
+var nightsWatchNode = require('./');
 
-describe('Test Node', function() {
+describe('test', function(){
+
+  // You should add more tests here
+  
   it('fail', function() {
-    assert(true);
+    assert(false);
   });
 });

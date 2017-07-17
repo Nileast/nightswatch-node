@@ -4,7 +4,7 @@
   "description": "A module used to gather information about computing node for Night's Watch app.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "cover": "nyc --reporter=lcov npm test"
   },
   "engines": {

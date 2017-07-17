@@ -1,7 +1,6 @@
 # nights-watch-nodeinfo
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-
+[![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 ## Installation
 
 ```
@@ -11,7 +10,25 @@
 ## Usage
 
 ```js
-var nightsWatchNode = require('nights-watch-node');
+const NWNode = require('nightswatch-node');
+
+// Create a node
+const node = new NWNode({
+  "host": "127.0.1.1",
+  "port": 22,
+  "username": "your-username",
+  "password": "your-password"
+});
+
+// Connect to the remote machine
+node.connect()
+  .then(async () => {
+    // Get computer uptime
+    await node.getUptime();     // returns {uptime: xxx, idle: xxx}
+
+    // Get CPU information
+    await node.getCPUs()        // {id: xxx, arch: xxx, vendor: xxx, modelName: xxx}
+  });
 ```
 
 ## Getting To Know Yeoman

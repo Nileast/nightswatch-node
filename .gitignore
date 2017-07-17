@@ -4,3 +4,5 @@ npm-debug.log
 coverage
 .nyc_output
 tmp.js
+secret.json
+.nyc_output

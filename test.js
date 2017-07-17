@@ -1,12 +1,12 @@
 'use strict';
 
-var assert = require('assert');
-var nightsWatchNode = require('./');
+const assert = require('assert');
+const nightsWatchNode = require('./');
 
-describe('test', function(){
+const auth = require('secret.json')
 
-  // You should add more tests here
-  
+
+describe('test', function() {
   it('fail', function() {
     assert(false);
   });

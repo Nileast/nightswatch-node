@@ -10,7 +10,7 @@ function isString(v) {
 }
 
 describe('test Node', function() {
-  let node = new Node(auth, 500);
+  let node = new Node(auth, 0);
 
   before((done) => {
     node.connect()
@@ -167,7 +167,6 @@ describe('test Node', function() {
         done();
       })
       .catch((e) => {
-        assert(false, e);
         done();
       })
   })
